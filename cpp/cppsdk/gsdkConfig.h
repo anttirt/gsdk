@@ -28,6 +28,7 @@ namespace Microsoft
                 virtual const GameServerConnectionInfo &getGameServerConnectionInfo() = 0;
                 virtual bool shouldLog() = 0;
                 virtual bool shouldHeartbeat() = 0;
+                virtual ~Configuration() {}
 
             protected:
                 static constexpr const char* HEARTBEAT_ENDPOINT_ENV_VAR = "HEARTBEAT_ENDPOINT";
